@@ -10,7 +10,7 @@
   when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'precise'
 
 - name: Install ffmap-backend dependencies
-  apt: name={{item}} state=present
+  apt: name={{item}} state=present update_cache=yes
   with_items: "{{ffmap_backend_dependencies}}"
 
 - name: Install python pip3
