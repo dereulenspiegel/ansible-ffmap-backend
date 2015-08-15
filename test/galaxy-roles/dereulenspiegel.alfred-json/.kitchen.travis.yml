@@ -1,0 +1,22 @@
+---
+driver                 :
+    name               : localhost
+
+provisioner:
+    name               : ansible_push
+    verbose            : "vvvv"
+    ansible_config     : "test/ansible.cfg"
+    idempotency_test   : False
+    sudo               : True
+
+
+platforms:
+    - name                      : travis
+      provisioner               :
+        raw_arguments           : "-c local"
+
+suites:
+  - name            : alfred-json
+    provisioner     :
+        playbook    : "test/application/alfred-json_travis.yml"
+        extra_vars  : { 'kitchen_connection': 'smart' }

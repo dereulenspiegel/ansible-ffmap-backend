@@ -1,0 +1,9 @@
+ffmap_backend_dependencies:
+- python3
+- rrdtool
+- batctl
+
+ffmap_backend_python_dependencies:
+- networkx
+
+ffmap_backend_pip3_available: true

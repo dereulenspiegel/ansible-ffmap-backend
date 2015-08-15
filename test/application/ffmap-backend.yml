@@ -1,0 +1,9 @@
+---
+- name         : Install and setup ffmap-backend
+  hosts        : all
+  gather_facts : yes
+  connection   : "{{ kitchen_connection | default('local') }}"
+  vars_files    :
+                 - "ffmap-backend_vars.yml"
+  roles        :
+                 - "ansible-ffmap-backend"

@@ -1,0 +1,3 @@
+alfred_batman_interface: none
+alfred_interface: eth0
+alfred_batadv_vis_interface: eth0
