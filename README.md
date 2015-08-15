@@ -1,4 +1,4 @@
-ffmap-backend
+ffmap-backend [![Build Status](https://travis-ci.org/dereulenspiegel/ansible-ffmap-backend.svg?branch=master)](https://travis-ci.org/dereulenspiegel/ansible-ffmap-backend)
 =========
 
 A brief description of the role goes here.
